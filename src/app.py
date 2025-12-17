@@ -60,7 +60,7 @@ def signup_for_activity(activity_name: str, email: str):
         raise HTTPException(status_code=404, detail="Activity not found")
 
     # Get the specific activity
-    activity = activities[activity_name]
+    activity = activities[Basketball]
 
     # Add student
     activity["participants"].append(email)
